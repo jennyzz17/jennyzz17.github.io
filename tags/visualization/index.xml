@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Visualization on Jenny Zhuo</title>
+    <link>https://jennyzz17.github.io/tags/visualization/</link>
+    <description>Recent content in Visualization on Jenny Zhuo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://jennyzz17.github.io/tags/visualization/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Visualization</title>
+      <link>https://jennyzz17.github.io/posts/third-post/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jennyzz17.github.io/posts/third-post/</guid>
+      <description>This blog is not finished yet, but it will be published in four weeks. Please wait:)</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Jenny Zhuo</title>
+    <link>https://jennyzz17.github.io/categories/</link>
+    <description>Recent content in Categories on Jenny Zhuo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://jennyzz17.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Problem 50: Consecutive Prime Sum</title>
+      <link>https://jennyzz17.github.io/categories/problem-50-consecutive-prime-sum/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jennyzz17.github.io/categories/problem-50-consecutive-prime-sum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Problem 68: Magic 5-gon Ring</title>
+      <link>https://jennyzz17.github.io/categories/problem-68-magic-5-gon-ring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jennyzz17.github.io/categories/problem-68-magic-5-gon-ring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Problem 7: 10001st Prime</title>
+      <link>https://jennyzz17.github.io/categories/problem-7-10001st-prime/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jennyzz17.github.io/categories/problem-7-10001st-prime/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Test</title>
+      <link>https://jennyzz17.github.io/categories/test/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jennyzz17.github.io/categories/test/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
