@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Jenny Zhuo</title>
+        <link>https://jennyzz17.github.io/</link>
+        <description>Recent content on Jenny Zhuo</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language><atom:link href="https://jennyzz17.github.io/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Deep Learning</title>
+        <link>https://jennyzz17.github.io/posts/fifth-post/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://jennyzz17.github.io/posts/fifth-post/</guid>
+        <description>&lt;img src="https://jennyzz17.github.io/bg4.jpeg" alt="Featured image of post Deep Learning" /&gt;&lt;p&gt;This blog is not finished yet, but it will be published in eight weeks. Please wait:)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Life after Graduate School</title>
+        <link>https://jennyzz17.github.io/posts/fourth-post/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://jennyzz17.github.io/posts/fourth-post/</guid>
+        <description>&lt;img src="https://jennyzz17.github.io/bg5.jpeg" alt="Featured image of post Life after Graduate School" /&gt;&lt;p&gt;This blog is not finished yet, but it will be published in six weeks. Please wait:)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Number Theory</title>
+        <link>https://jennyzz17.github.io/posts/second-post/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://jennyzz17.github.io/posts/second-post/</guid>
+        <description>&lt;img src="https://jennyzz17.github.io/bg2.jpg" alt="Featured image of post Number Theory" /&gt;&lt;p&gt;This blog is not finished yet, but it will be published in two weeks. Please wait:)&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>The Euler Project</title>
+        <link>https://jennyzz17.github.io/posts/first-post/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://jennyzz17.github.io/posts/first-post/</guid>
+        <description>&lt;img src="https://jennyzz17.github.io/bg1.jpeg" alt="Featured image of post The Euler Project" /&gt;&lt;p&gt;This blog is written for describing my solutions and how I approached each problem for the Euler Project. The links of the original problems I chose to challenge myself are included below. Feel free to try them and share your thinkings while reading this blog!&lt;/p&gt;
+&lt;h2 id=&#34;problem-7-10001st-prime&#34;&gt;&lt;strong&gt;Problem 7: 10001st Prime&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://projecteuler.net/problem=7&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;This problem&lt;/a&gt; was successfully solved by 
+424,660 participants. Here is my idea for this question. It can be answered by completing two separate tasks.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;1st&lt;/th&gt;
+&lt;th&gt;2nd&lt;/th&gt;
+&lt;th&gt;3rd&lt;/th&gt;
+&lt;th&gt;4th&lt;/th&gt;
+&lt;th&gt;5th&lt;/th&gt;
+&lt;th&gt;6th&lt;/th&gt;
+&lt;th&gt;&amp;hellip;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;2&lt;/td&gt;
+&lt;td&gt;3&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;7&lt;/td&gt;
+&lt;td&gt;11&lt;/td&gt;
+&lt;td&gt;13&lt;/td&gt;
+&lt;td&gt;&amp;hellip;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;the-two-tasks-of-finding-the-10001st-prime&#34;&gt;&lt;strong&gt;The two tasks of finding the 10001st Prime:&lt;/strong&gt;&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;How to identify a prime number:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;To define a prime number based on the math concept
+&lt;ul&gt;
+&lt;li&gt;Prime numbers are whole numbers greater than 1&lt;/li&gt;
+&lt;li&gt;Prime numbers have only two factors: 1 and the number itself&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;How to know which one is the 10001st:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;To find and count all the prime numbers until the 10001st one&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;After clarifying these two tasks, we can begin to think about how to finish them using Python.&lt;/p&gt;
+&lt;h3 id=&#34;to-define-a-prime-number&#34;&gt;&lt;strong&gt;To define a prime number&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;First of all, to define whether a number is a prime number or not, we can create certain function based on the mathematical concept so that it can be directly applied to every input number.&lt;/p&gt;
+&lt;p&gt;While building this function, the problem is how to write the concepts into codes. If a number only has two factors, it means it will have remainder when dividing by anything except one and itself.&lt;/p&gt;
+&lt;p&gt;Therefore, for every input number, we use it to divide by every number from two to the square root of the input plus one. Then we check if at least one of the remainders equal to 0. The reason why we consider the square root of the input number is as follows. The values of the factors are fixed, but the order is reversed after the square root value. Thus, it would save us some time if we only consider the values before the square root.&lt;/p&gt;
+&lt;p&gt;For example, if we want to know whether 37 is a prime number or not, we use 37 to divide by every number from 2 to 8 (square root of 37 + 1 ). Since none of the remainders equals to 0, 37 is a prime number.&lt;/p&gt;
+&lt;h3 id=&#34;to-count-prime-numbers&#34;&gt;&lt;strong&gt;To count prime numbers&lt;/strong&gt;&lt;/h3&gt;
+&lt;p&gt;In addition, counting prime numbers is a easier task to do. When we input a number, we use the above method to examine whether it is a prime number. If yes, we count it as one. Otherwise, the count equals to 0. When the count value equals to our limit (which is 10001), we output that prime number.&lt;/p&gt;
+&lt;p&gt;Finally, we solve this problem by following this process. The next problem is also concerning about prime numbers. Thus, the function we created to define a prime number can be reused!&lt;/p&gt;
+&lt;h2 id=&#34;problem-50-consecutive-prime-sum&#34;&gt;&lt;strong&gt;Problem 50: Consecutive Prime Sum&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://projecteuler.net/problem=50&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;This problem&lt;/a&gt; was successfully solved by 
+62,922 participants. Here is my idea for this question. It can be finished by answering three questions.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Is the sum of this list a prime number?&lt;/li&gt;
+&lt;li&gt;Is the sum of this list below one million?&lt;/li&gt;
+&lt;li&gt;Is this list longer than the one we found earlier?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;By considering these questions, the logic of solving this problem could be much clearer. Firstly, we can put all the consecutive prime numbers (where the function defining the prime numbers is used again) in a large list as long as their sum is less than one million. Then based on this list including all the potential numbers, we can select which ones are kept in the final result list.&lt;/p&gt;
+&lt;p&gt;The selecting criteria are actually answering the three questions above. To check these requirements, three &amp;ldquo;if&amp;rdquo; conditions can be applied here. With looping through this whole list, we move backward to find out the possible lengths of the final list of prime numbers. With that length, we filter out the numbers which can&amp;rsquo;t make the sum a prime number or make the sum greater than one million. Then we save the qualified lists and pick the longest one.&lt;/p&gt;
+&lt;h2 id=&#34;problem-68-magic-5-gon-ring&#34;&gt;&lt;strong&gt;Problem 68: Magic 5-gon ring&lt;/strong&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://projecteuler.net/problem=68&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;This problem&lt;/a&gt; was successfully solved by 
+20,713 participants. Here is my idea for this question. It can be finished by first filling the numbers into the ring and then pick the maximum value.&lt;/p&gt;
+&lt;h4 id=&#34;the-two-tasks&#34;&gt;&lt;strong&gt;The two tasks:&lt;/strong&gt;&lt;/h4&gt;
+&lt;ol&gt;
+&lt;li&gt;How to fill the numbers into the ring:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;The line-sum should be equal for each line&lt;/li&gt;
+&lt;li&gt;The numbers should be unique&lt;/li&gt;
+&lt;li&gt;Total digits should be 16&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;How to get the maximum:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;To output each line of numbers as pairs by following the clock-wise order&lt;/li&gt;
+&lt;li&gt;To output the 16-digit number based on the pairs&lt;/li&gt;
+&lt;li&gt;To find the maximum&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;figure 
+	&gt;
+	&lt;a href=&#34;https://jennyzz17.github.io/problem3.png&#34; &gt;
+		&lt;img src=&#34;https://jennyzz17.github.io/problem3.png&#34;
+			
+			
+			
+			loading=&#34;lazy&#34;
+			alt=&#34;Magic 5-Gon Ring&#34;&gt;
+	&lt;/a&gt;
+	
+	&lt;figcaption&gt;Magic 5-Gon Ring&lt;/figcaption&gt;
+	
+&lt;/figure&gt;
+As seen in the picture above, the letters are filled in alphabetically and following the clock-wise order. It should be the same way as we fill in the numbers. Therefore, A, D, F, H, J represent outer numbers meaning they will only be used once when calculating the line-sum. The rest of letters (B, C, E, G, and I) represent the numbers which will be used twice. Then the general logic is to find each value corresponding to each letter in the picture.&lt;/p&gt;
+&lt;p&gt;Thus, at point A, we can select any number from one to ten. After that, we must delete that selected number from the list and then choose a number for point B. Now we are at point C, we must first delete the numbers chosen for A and B, and then choose a number for point C. Most importantly, we need to calculate the sum of A, B, and C as the line-sum to be used for further steps. Then we continue to select a number for point D from the rest of numbers. The similar logic an be applied to the remaining process which will not be completely covered here.&lt;/p&gt;
+&lt;p&gt;At this point, the process of filling the numbers into the ring is finished. We have saved all possible combination of numbers that can satisify those three criteria. Next we filter out the combination choices which have 16 digits.
+Finally, we can create a function to arrange those pairs of numbers by following the clock-wise order and find the maximum.&lt;/p&gt;
+&lt;h4 id=&#34;if-you-find-this-blog-helpful-please-feel-free-to-contact-me-or-bookmark-this-website-thank-you-for-reading&#34;&gt;&lt;strong&gt;If you find this blog helpful, please feel free to contact me or bookmark this website. Thank you for reading!&lt;/strong&gt;&lt;/h4&gt;
+</description>
+        </item>
+        <item>
+        <title>Visualization</title>
+        <link>https://jennyzz17.github.io/posts/third-post/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://jennyzz17.github.io/posts/third-post/</guid>
+        <description>&lt;img src="https://jennyzz17.github.io/pawel-czerwinski-8uZPynIu-rQ-unsplash.jpg" alt="Featured image of post Visualization" /&gt;&lt;p&gt;This blog is not finished yet, but it will be published in four weeks. Please wait:)&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
