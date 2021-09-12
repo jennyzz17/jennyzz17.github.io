@@ -229,8 +229,23 @@
 </header>
 
     <section class="article-content">
-    <p>This blog is not finished yet, but it will be published in two weeks. Please wait:)</p>
-
+        <p class="has-line-data" data-line-start="0" data-line-end="1">This blog is written for describing my solution and how I solved a Google recruitment puzzle. Feel free to try this problem and share your thinkings while reading this blog!</p>
+        <h2 class="code-line" data-line-start=2 data-line-end=3 ><a id="Puzzle_of_Number_Theory_Find_the_first_10digit_prime_in_the_decimal_expansion_of_17_2"></a><strong>Puzzle of Number Theory: Find the first 10-digit prime in the decimal expansion of 17π.</strong></h2>
+        <p class="has-line-data" data-line-start="4" data-line-end="5">By separating this task into three parts, we can build a final function to find the answer by creating three sub-functions first.</p>
+        <h3 class="code-line" data-line-start=6 data-line-end=7 ><a id="First_Part_Decimal_Expansion_6"></a><strong>First Part: Decimal Expansion</strong></h3>
+        <p class="has-line-data" data-line-start="7" data-line-end="8">The first step is to find the decimal expansion of special mathematical expressions (ex:π and e). Based on this purpose, I created a function named as “math_expand” with two inputs: input math expression (π or e) and expansion number. The function was defined as math_expand(input_exp, expand_no).</p>
+        <p class="has-line-data" data-line-start="9" data-line-end="10">Built upon the package of “mpmath”, if the input is e (as a string), this function will output the value of e with a specified expansion. If the input is π (as a string), it will output the value of π with a specified expansion. For instance, math_expand(“e”, 20) = 2.7182818284590452354.</p>
+        <h3 class="code-line" data-line-start=11 data-line-end=12 ><a id="Second_Part_Prime_Number_11"></a><strong>Second Part: Prime Number</strong></h3>
+        <p class="has-line-data" data-line-start="12" data-line-end="13">The second step is to give a definition of prime numbers, so that we can check whether any input number is prime or not. While building this function, the problem is how to write the concepts into codes. If a number only has two factors, it means it will have remainder when dividing by anything except one and itself.</p>
+        <p class="has-line-data" data-line-start="14" data-line-end="15">Therefore, for every input number, I used it to divide by every number from two to the square root of the input plus one. Then I checked if at least one of the remainders equal to 0. The reason why I considered the square root of the input number is as follows. The values of the factors are fixed, but the order is reversed after the square root value. Thus, it would save us some time if we only consider the values before the square root.</p>
+        <p class="has-line-data" data-line-start="16" data-line-end="17">This “is_prime” function will output True if the input is a prime number; otherwise, it will output False.</p>
+        <h3 class="code-line" data-line-start=19 data-line-end=20 ><a id="Third_Part_10Digit_Number_19"></a><strong>Third Part: 10-Digit Number</strong></h3>
+        <p class="has-line-data" data-line-start="20" data-line-end="21">The third step is to collect all 10-digit numbers in the decimal expansion part. I firstly extracted the part after the decimal point, applied a specificed-width sliding window to a iterable input, and then collect all the 10-digit numbers in a list. This function was defined as slide_window(input_list, width).</p>
+        <p class="has-line-data" data-line-start="22" data-line-end="23"><img src="sliding.png" alt="Sliding Window"></p>
+        <p class="has-line-data" data-line-start="24" data-line-end="25">As an example, as shown in the picture, slide_window(3.123456789, 2) = [12, 23, 34, 45, … , 89].</p>
+        <h2 class="code-line" data-line-start=26 data-line-end=27 ><a id="The_Final_Integrated_Function_26"></a><strong>The Final Integrated Function</strong></h2>
+        <p class="has-line-data" data-line-start="27" data-line-end="28">The final function defined as “first_ten_prime” is to integrate the above three functions. I obatined the value with decimal expanded π and multiplied it by 17 before plugging it into the final function. Then I applied the “slide_window” function on this input to get the list of 10-digit numbers. Finally, based on the “is_prime” function, I checked every number was prime number or not. After successfully finding the first 10-digit prime number, the loop will break.</p>
+        <p class="has-line-data" data-line-start="31" data-line-end="32">This function output the value of 8649375157 when the input is 17π. That’s the way I solved this puzzle. Hope the logic is clear to you!</p>
 </section>
 
 
