@@ -241,7 +241,21 @@
         <p class="has-line-data" data-line-start="16" data-line-end="17">This “is_prime” function will output True if the input is a prime number; otherwise, it will output False.</p>
         <h3 class="code-line" data-line-start=19 data-line-end=20 ><a id="Third_Part_10Digit_Number_19"></a><strong>Third Part: 10-Digit Number</strong></h3>
         <p class="has-line-data" data-line-start="20" data-line-end="21">The third step is to collect all 10-digit numbers in the decimal expansion part. I firstly extracted the part after the decimal point, applied a specificed-width sliding window to a iterable input, and then collect all the 10-digit numbers in a list. This function was defined as slide_window(input_list, width).</p>
-        <p class="has-line-data" data-line-start="22" data-line-end="23"><img src="sliding.png" alt="Sliding Window"></p>
+        <p class="has-line-data" data-line-start="22" data-line-end="23">
+            <p><figure 
+	>
+	<a href="/sliding.png" >
+		<img src="/sliding.png"
+			
+			
+			
+			loading="lazy"
+			alt="Sliding Window">
+	</a>
+	
+	<figcaption>Sliding Window</figcaption>
+	
+</figure>
         <p class="has-line-data" data-line-start="24" data-line-end="25">As an example, as shown in the picture, slide_window(3.123456789, 2) = [12, 23, 34, 45, … , 89].</p>
         <h2 class="code-line" data-line-start=26 data-line-end=27 ><a id="The_Final_Integrated_Function_26"></a><strong>The Final Integrated Function</strong></h2>
         <p class="has-line-data" data-line-start="27" data-line-end="28">The final function defined as “first_ten_prime” is to integrate the above three functions. I obatined the value with decimal expanded π and multiplied it by 17 before plugging it into the final function. Then I applied the “slide_window” function on this input to get the list of 10-digit numbers. Finally, based on the “is_prime” function, I checked every number was prime number or not. After successfully finding the first 10-digit prime number, the loop will break.</p>
